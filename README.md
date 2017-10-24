@@ -14,9 +14,9 @@ _Node.js._
 
 `mkdir bin public scss && mkdir public/css`
 
-    **scss** contains scss files and directories.
-    **public** contains css files and directories.
-    **bin** contains command line script to compile scss files.
+* **scss** contains scss files and directories.
+* **public** contains css files and directories.
+* **bin** contains command line script to compile scss files.
 
 * Now set up the files.
 
@@ -29,7 +29,7 @@ _Node.js._
 
 `npm install -D node-sass nodemon`
 
-    * -D flag writes the node-modules into the package.json.
+    -D flag writes the node-modules into the package.json.
     **node-sass** wraps Libsass. Gulp-sass uses this package to compile scss to css files.
     **nodemon** watches for changes on our scss files.
 
