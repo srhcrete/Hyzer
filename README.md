@@ -14,23 +14,24 @@ _Node.js._
 
 `mkdir bin public scss && mkdir public/css`
 
-    * _**scss** contains scss files and directories._
-    * _**public** contains css files and directories_
-    * _**bin** contains command line script to compile scss files._
+    **scss** contains scss files and directories.
+    **public** contains css files and directories.
+    **bin** contains command line script to compile scss files.
+
 * Now set up the files.
 
 `touch scss/main.scss .gitignore`
 
-    * _**main.scss** where we write the scss code._
-    * _Add **node_modules** to the **.gitignore**._
+    **main.scss** where we write the scss code.
+    Add **node_modules** to the **.gitignore**.
 
 ## Install dev-dependencies
 
 `npm install -D node-sass nodemon`
 
-    * _-D flag writes the node-modules into the package.json._
-    * _**node-sass** wraps Libsass. Gulp-sass uses this package to compile scss to css files._
-    * _**nodemon** watches for changes on our scss files._   
+    * -D flag writes the node-modules into the package.json.
+    **node-sass** wraps Libsass. Gulp-sass uses this package to compile scss to css files.
+    **nodemon** watches for changes on our scss files.
 
 ## Compile the Sass
 
@@ -57,8 +58,8 @@ _Node.js._
 
 * Run `touch bin/build-css bin/watch-css` in the terminal.
 
-    * _Take the build-css script and put it in the build-css file._
-    * _Take the watch-css script and put it in the watch-css file._
+    * Take the **build-css script** and put it in the **build-css file**.
+    * Take the **watch-css script** and put it in the **watch-css file**.
 
 * Run `chmod +x bin/build-css chmod +x bin/watch-css` in the terminal.
 * Change the scripts reference in the package.json file to
@@ -67,7 +68,7 @@ _Node.js._
       “build-css”: “./bin/build-css”,
       “watch-css”: “./bin/watch-css”
       },`_
-      
+
 * Then run `npm run watch-css` again.     
 
 
