@@ -14,24 +14,24 @@ _Node.js._
 
 `mkdir bin public scss && mkdir public/css`
 
-* **scss** contains scss files and directories.
-* **public** contains css files and directories.
-* **bin** contains command line script to compile scss files.
+  * **scss** contains scss files and directories.
+  * **public** contains css files and directories.
+  * **bin** contains command line script to compile scss files.
 
 * Now set up the files.
 
 `touch scss/main.scss .gitignore`
 
-    **main.scss** where we write the scss code.
-    Add **node_modules** to the **.gitignore**.
+    * **main.scss** where we write the scss code.
+    * Add **node_modules** to the **.gitignore**.
 
 ## Install dev-dependencies
 
 `npm install -D node-sass nodemon`
 
-    -D flag writes the node-modules into the package.json.
-    **node-sass** wraps Libsass. Gulp-sass uses this package to compile scss to css files.
-    **nodemon** watches for changes on our scss files.
+    * -D flag writes the node-modules into the package.json.
+    * **node-sass** wraps Libsass. Gulp-sass uses this package to compile scss to css files.
+    * **nodemon** watches for changes on our scss files.
 
 ## Compile the Sass
 
