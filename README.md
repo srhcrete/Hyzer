@@ -22,8 +22,8 @@ _Node.js._
 
 `touch scss/main.scss .gitignore`
 
-* **main.scss** where we write the scss code.
-* Add **node_modules** to the **.gitignore**.
+      * **main.scss** is where we write the scss code.
+      * Add **node_modules** to the **.gitignore**.
 
 ## Install dev-dependencies
 
@@ -39,7 +39,7 @@ _Node.js._
 
      `“scripts”: {
       “build-css”: “node-sass --include-path scss scss/main.scss   public/css/main.css”
-      },`.
+      },`
 
 * Then run `npm run build-css` in the terminal.
 
@@ -50,7 +50,7 @@ _Node.js._
     `“scripts”: {
       “build-css”: “node-sass --include-path scss scss/main.scss public/css/main.css”,
       “watch-css”: “nodemon -e scss -x \”npm run build-css\””
-      },`._
+      },`
 
 * Then run `npm run watch-css` in the terminal.
 
@@ -67,7 +67,7 @@ _Node.js._
       `“scripts”: {
       “build-css”: “./bin/build-css”,
       “watch-css”: “./bin/watch-css”
-      },`_
+      },`
 
 * Then run `npm run watch-css` again.     
 
