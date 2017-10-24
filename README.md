@@ -22,8 +22,8 @@ _Node.js._
 
 `touch scss/main.scss .gitignore`
 
-      * **main.scss** is where we write the scss code.
-      * Add **node_modules** to the **.gitignore**.
+* **main.scss** is where we write the scss code.
+* Add **node_modules** to the **.gitignore**.
 
 ## Install dev-dependencies
 
