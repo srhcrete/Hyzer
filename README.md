@@ -1,6 +1,6 @@
 # _Sass with npm_
 
-#### _Project setup to watch and compile sass with npm. More detailed steps for this project can be found in this [article](https://medium.com/@brianhan/watch-compile-your-sass-with-npm-9ba2b878415b) by Brian Han._
+#### Project setup to watch and compile sass with npm. More detailed steps for this project can be found in this [article](https://medium.com/@brianhan/watch-compile-your-sass-with-npm-9ba2b878415b) by Brian Han.
 
 ## Pre-requisites
 
