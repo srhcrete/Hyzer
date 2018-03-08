@@ -11,7 +11,7 @@ module.exports = {
         name: 'YOU DAAAADDDDDD'
       },
       {
-        name: 'BOONDOGLE'
+        name: 'BOONDAngole'
       }
     ]);
   }

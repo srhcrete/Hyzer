@@ -10,8 +10,7 @@
     "sass:watch": "chokidar 'front-end/scss/*.scss' -c 'npm run sass:build'",
     "templates:copy": "cp front-end/index.html dist/index.html",
     "templates:watch": "chokidar 'front-end/index.html' -c 'npm run templates:copy'",
-    "server:run-express": "node server/index.js",
-    "server:watch": "chokidar 'server/**/*.js' -c 'npm run server:run-express'",
+    "server:run-express": "nodemon --watch server server/index.js",
     "dev": "npm-run-all -p sass:* templates:* server:*"
   },
   "author": "",
