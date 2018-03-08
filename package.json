@@ -1,16 +1,38 @@
 {
-  "name": "sass-with-npm",
+  "name": "hyzer",
   "version": "1.0.0",
-  "description": "#### _Project setup to watch and compile sass with npm. More detailed steps for this project can be found in this [article](https://medium.com/@brianhan/watch-compile-your-sass-with-npm-9ba2b878415b) by Brian Han._",
+  "description": "#### _Disc golf score keeper built using Node and Express",
   "main": "index.js",
   "scripts": {
-    "build-css": "./bin/build-css",
-    "watch-css": "./bin/watch-css"
+    "build-task:scss-compile": "node-sass-chokidar --source-map true front-end/scss/ -o dist/css",
+    "build-task:autoprefixer": "postcss dist/css/*.css --use autoprefixer -d dist/css",
+    "sass:build": "npm-run-all -p build-task:*",
+    "sass:watch": "chokidar 'front-end/scss/*.scss' -c 'npm run sass:build'",
+    "templates:copy": "cp front-end/index.html dist/index.html",
+    "templates:watch": "chokidar 'front-end/index.html' -c 'npm run templates:copy'",
+    "server:run-express": "node server/index.js",
+    "server:watch": "chokidar 'server/**/*.js' -c 'npm run server:run-express'",
+    "dev": "npm-run-all -p sass:* templates:* server:*"
   },
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "node-sass": "^4.5.3",
-    "nodemon": "^1.12.1"
-  }
+    "autoprefixer": "^8.1.0",
+    "chokidar-cli": "^1.2.0",
+    "node-sass-chokidar": "^1.1.0",
+    "npm-run-all": "^4.1.2",
+    "postcss-cli": "^5.0.0"
+  },
+  "dependencies": {
+    "express": "^4.16.2"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/srhcrete/Hyzer.git"
+  },
+  "keywords": [],
+  "bugs": {
+    "url": "https://github.com/srhcrete/Hyzer/issues"
+  },
+  "homepage": "https://github.com/srhcrete/Hyzer#readme"
 }
