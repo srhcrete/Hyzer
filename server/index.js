@@ -8,7 +8,7 @@ app.use(express.static('dist', {
   dotfiles: 'ignore',
   etag: false,
   extensions: ['htm', 'html'],
-  index: false,
+  index: ['index.html'],
   maxAge: '1d',
   redirect: false,
   setHeaders: function (res, path, stat) {
@@ -19,7 +19,7 @@ app.use(express.static('dist', {
 app.get('/api/games', gamesMiddleware.all);
 
 app.get('/*', function(request, response) {
-  response.sendFile(path.join(__dirname, '..', 'dist', 'index.html'));
+  response.sendFile(path.join(__dirname, '..', 'dist'));
 });
 
 app.listen(3000);
