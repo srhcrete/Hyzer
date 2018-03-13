@@ -2,6 +2,7 @@
   "name": "hyzer",
   "version": "1.0.0",
   "description": "Disc golf score keeper built using Node and Express",
+  "main": "front-end/index.js",
   "scripts": {
     "build-task:scss-compile": "node-sass-chokidar --source-map true front-end/scss/ -o dist/css",
     "build-task:autoprefixer": "postcss dist/css/*.css --use autoprefixer -d dist/css",
@@ -10,8 +11,8 @@
     "templates:copy": "cp front-end/index.html dist/index.html",
     "templates:watch": "chokidar 'front-end/index.html' -c 'npm run templates:copy'",
     "server:run-express": "nodemon --watch server server/index.js",
-    "dev": "npm-run-all -p sass:* templates:* server:*",
-    "webpack": "./node_modules/.bin/webpack --config webpack.config.js -w --display-error-details",
+    "webpack:build": "./node_modules/.bin/webpack --config webpack.config.js -w --display-error-details",
+    "dev": "npm-run-all -p sass:* templates:* server:* webpack:*",
     "test": "mocha --compilers babel-core/register ./test/*test.js"
   },
   "author": "",
