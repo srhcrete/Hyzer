@@ -6,9 +6,9 @@ class App extends Component {
   render() {
     return (
       <div>
+        <Header  name="Sarah"/>
         <Header />
-        <Header />
-        <Footer />
+        <Footer name="Sarah"/>
       </div>
     );
   }
