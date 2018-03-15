@@ -1,8 +1,15 @@
 import React, { Component } from 'react';
+import Header from './Header.js';
 
 class App extends Component {
   render() {
-    return <h1> Hello World </h1>;
+    return (
+      <div>
+        <Header />
+        <Header />
+        <Header />
+      </div>
+    );
   }
 }
 
