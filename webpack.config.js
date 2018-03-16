@@ -9,6 +9,10 @@ module.exports = {
   entry: {
     main: path.join(__dirname, 'front-end', 'index.js'),
   },
+  devServer: {
+        inline: false,
+        contentBase: "./dist",
+  },
   output: {
     filename: 'bundle.js',
     path: BUILD_DIR,
@@ -30,12 +34,12 @@ module.exports = {
       {
         test: /\.(scss)?$/,
         use: [
-          // {
-          //   loader: "style-loader" // creates style nodes from JS strings
-          // },
-          // {
-          //   loader: "css-loader" // translates CSS into CommonJS
-          // },
+          {
+            loader: "style-loader" // creates style nodes from JS strings
+          },
+          {
+            loader: "css-loader" // translates CSS into CommonJS
+          },
           {
             loader: "sass-loader" // compiles Sass to CSS
           },
