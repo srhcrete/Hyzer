@@ -3,7 +3,9 @@ import '../scss/footer.scss';
 
 class Footer extends Component {
   render() {
-    return <h1 id='footer'> Hello, {this.props.name} </h1>;
+    return (
+      <h1 id='footer'> Hello, {this.props.name} </h1>
+    );
   }
 }
 
