@@ -6,7 +6,6 @@ class App extends Component {
   render() {
     return (
       <div>
-        <Header  name="Sarah"/>
         <Header />
         <Footer name="Sarah"/>
       </div>

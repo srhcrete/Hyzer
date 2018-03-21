@@ -4,7 +4,7 @@ import '../scss/footer.scss';
 class Footer extends Component {
   render() {
     return (
-      <h1 id='footer'> Hello, {this.props.name} </h1>
+      <h5 id='footer'> Hello </h5>
     );
   }
 }

@@ -1,4 +1,49 @@
-#header {
-  font-size: 40px;
-  color: red;
+body {
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  height: 360px;
+  z-index: 10;
+}
+
+.header-banner {
+  background-color: #6a96dd;
+  color: #e28e56;
+  width: 100%;
+  height: 300px;
+}
+
+.header-logo {
+  color: #e28e56;
+}
+
+.fixed-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+
+nav {
+  width: 100%;
+  height: 60px;
+  background: #292f36;
+  position: fixed;
+  z-index: 10;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0 auto;
+  padding-left: 0;
+  text-align: right;
+  max-width: 100%;
+}
+
+nav ul li {
+  display: inline-block;
+  line-height: 60px;
+  margin-left: 10px;
 }
